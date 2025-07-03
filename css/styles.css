@@ -142,6 +142,10 @@ samp {
   text-transform: uppercase;
 }
 
+.title span {
+  color: #bc9060;
+}
+
 /* Header styles */
 .header {
   position: absolute;
@@ -296,6 +300,45 @@ samp {
   margin-top: 2.1rem;
 }
 
+/* advantages styles */
+
+.advantages__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15rem;
+  margin-top: -11rem;
+}
+
+.advantages__item {
+  width: 34.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4.8rem 2rem 5.4rem;
+  font-family: 'Tinos', sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 2.6rem;
+  line-height: 1.15;
+  background-color: #ffffff;
+  box-shadow: 1rem 1rem 4rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.advantages__icon {
+  width: 8.7rem;
+  height: 8.7rem;
+  margin-bottom: 0.4rem;
+}
+
+.advantages__header {
+  margin-bottom: 2rem;
+  color: #2c2c2c;
+}
+
+.advantages__text {
+  color: #656363;
+}
+
 /* Media Queries */
 
 @media (max-width: 80em) {
@@ -314,6 +357,8 @@ samp {
     width: 100%;
   }
 
+  /* header */
+
   .header {
     width: 100%;
   }
@@ -325,6 +370,8 @@ samp {
   .header__burger {
     display: block;
   }
+
+  /* hero */
 
   .hero {
     background-image: url('../img/hero-mob-bg.jpg');
@@ -348,5 +395,32 @@ samp {
   .hero__button {
     font-size: 2.8rem;
     padding: 2.8rem 9rem;
+  }
+
+  /* advantages */
+
+  .advantages__wrapper {
+    flex-direction: column;
+    gap: 2.8rem;
+  }
+
+  .advantages__item {
+    width: 100%;
+    min-height: 53rem;
+  }
+
+  .advantages__icon {
+    width: 17rem;
+    height: 17rem;
+  }
+
+  .advantages__header {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+  }
+
+  .advantages__text {
+    font-size: 3.4rem;
+    line-height: 1.4;
   }
 }
