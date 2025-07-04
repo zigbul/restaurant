@@ -468,6 +468,64 @@ samp {
   align-self: center;
 }
 
+/* Dish styles */
+
+.dish {
+  margin-top: 13.2rem;
+  margin-bottom: 15rem;
+}
+
+.dish__header {
+  font-family: 'Tinos', sans-serif;
+  text-align: center;
+  margin-bottom: 14rem;
+  font-weight: 400;
+  font-size: 5.4rem;
+  line-height: 1.15;
+}
+
+.dish__wrapper {
+  display: flex;
+}
+
+.dish__left {
+  margin-right: 3rem;
+  width: 40.5%;
+  height: 47.8rem;
+  overflow: hidden;
+}
+
+.dish__left img {
+  object-fit: cover;
+}
+
+.dish__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 59.5%;
+}
+
+.dish__item-img {
+  width: 16rem;
+  height: 14rem;
+  margin-right: 3rem;
+}
+
+.dish__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Tinos', sans-serif;
+  font-weight: 400;
+  font-size: 2.6rem;
+  line-height: 1.15;
+}
+
+.dish__name span {
+  display: none;
+}
+
 /* Media Queries */
 
 @media (max-width: 80em) {
@@ -618,5 +676,58 @@ samp {
   .holiday__button {
     font-size: 2.8rem;
     padding: 2.5rem 2rem;
+  }
+
+  /* dish */
+
+  .dish__wrapper {
+    flex-direction: column;
+  }
+
+  .dish__header {
+    margin-bottom: 5rem;
+    font-size: 10rem;
+    padding: 0 2rem;
+  }
+
+  .dish__left,
+  .dish__right {
+    width: 100%;
+  }
+
+  .dish__left {
+    height: 95rem;
+    margin-left: -4rem;
+    margin-right: -4rem;
+    margin-bottom: 8rem;
+  }
+
+  .dish__item {
+    justify-content: flex-start;
+  }
+
+  .dish__item:not(:last-child) {
+    margin-bottom: 5rem;
+  }
+
+  .dish__item-img {
+    width: 26rem;
+    height: 26rem;
+  }
+
+  .dish__dotted,
+  .dish__coin {
+    display: none;
+  }
+
+  .dish__name span {
+    display: block;
+  }
+
+  .dish__name {
+    text-align: center;
+    font-weight: 400;
+    font-size: 3.5rem;
+    line-height: 1.4;
   }
 }
