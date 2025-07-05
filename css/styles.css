@@ -751,6 +751,31 @@ samp {
   left: 0;
 }
 
+/* Cooks styles */
+
+.cooks__header {
+  text-align: center;
+  font-weight: 400;
+  font-size: 5.4rem;
+  line-height: 1.15;
+  margin-bottom: 10rem;
+}
+
+.cooks__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10rem;
+}
+
+.cooks__img {
+  width: 35rem;
+  height: 46.2rem;
+}
+
+.cooks__img img {
+  object-fit: cover;
+}
+
 /* Media Queries */
 
 @media (max-width: 80em) {
@@ -1100,6 +1125,27 @@ samp {
 
   .gallery__img-samll img,
   .gallery__img-big img {
+    object-fit: cover;
+  }
+
+  /* cooks */
+
+  .cooks__wrapper {
+    flex-direction: column;
+    gap: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .cooks__img {
+    width: 100%;
+    height: 76rem;
+  }
+
+  .cooks__img-big {
+    height: 100rem;
+  }
+
+  .cooks__img-big img {
     object-fit: cover;
   }
 }
