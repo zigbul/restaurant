@@ -510,6 +510,7 @@ samp {
   width: 16rem;
   height: 14rem;
   margin-right: 3rem;
+  overflow: hidden;
 }
 
 .dish__item {
@@ -726,6 +727,7 @@ samp {
 .gallery__img-big,
 .gallery__img-small {
   width: 49%;
+  overflow: hidden;
 }
 
 .gallery__img-big img,
@@ -770,6 +772,7 @@ samp {
 .cooks__img {
   width: 35rem;
   height: 46.2rem;
+  overflow: hidden;
 }
 
 .cooks__img img {
@@ -781,6 +784,19 @@ samp {
 @media (max-width: 80em) {
   html {
     font-size: 0.765vw;
+  }
+}
+
+@media (min-width: 48em) {
+  .button:hover {
+    background-color: #d86504;
+  }
+
+  .dish__wrapper img:hover,
+  .gallery img:hover,
+  .cooks img:hover {
+    transform: scale(1.05);
+    transition: all ease-in-out 0.5s;
   }
 }
 
@@ -930,8 +946,15 @@ samp {
 
   /* dish */
 
+  .dish {
+    position: relative;
+    margin-top: 1.2rem;
+    margin-bottom: 15rem;
+  }
+
   .dish__wrapper {
     flex-direction: column;
+    padding-top: 105rem;
   }
 
   .dish__header {
@@ -946,8 +969,13 @@ samp {
   }
 
   .dish__left {
+    position: absolute;
     height: 95rem;
     margin-bottom: 8rem;
+    margin-right: 0;
+    left: 0;
+    right: 0;
+    top: 30rem;
   }
 
   .dish__item {
